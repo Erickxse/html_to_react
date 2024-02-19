@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js'></script>
+  <title>HISTORIAS CLINICAS | CLINICA</title>
+  <script src="https://kit.fontawesome.com/2e20a61ec9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/start.css">
+  <link rel="stylesheet" href="../css/estructura.css">
+  <script src="../js/start.js"></script>
+</head>
+<body>
+
+  <header>
+    <section class="header-container">
+      <a href="start.html" class="img-titulo-link">
+        <img class="img-titulo estetoscopio-logo" src="../images/ClinicaRenacer.png" alt="Titulo">
+      </a>
+      <img class="burger-icon" src="../images/burguer-icon.png" alt="MenuBurger">
+    </section>
+    <section class="logo-container">
+      <img class="img-logo" src="../images/clinic-logo.png" alt="Logo">
+      <img class="engranaje-logo" src="../images/engranaje-logo.png" alt="Engranaje" id="engranaje-icon">
+    </section>
+    <section class="dropdown-menu" id="dropdownMenu">
+      <ul>
+        <li>
+          <a href="../index.html" onclick="cerrarSesion()">
+              <i class="fas fa-sign-out-alt"></i>Cerrar Sesión
+          </a>
+      </li>
+      </ul>
+    </section>
+  </header>
+
+  <nav id="navbar">
+    <ul id="menuText">MENU</ul>
+    <ul id="navOptions" class="nav-options">
+      <li data-page="informacion.html" title="Servicios"><i class="fa-solid fa-sheet-plastic"></i><a href="#">Servicios</a></li>
+      <li data-page="HistoriaClinica.html" title="Historia Clínica"><i class="fa-solid fa-hospital-user"></i><a href="#">Historia Clinica</a></li>
+      <li data-page="ControlCitas.html" title="Control de Citas"><i class="fa-solid fa-laptop-medical"></i><a href="#">Agendar Citas</a></li>
+      <li data-page="start.html" class="active" title="Calendario"><i class="fa-regular fa-calendar-days"></i><a href="#">Calendario</a></li>
+    </ul>
+  </nav>
+  
+  <section class="content" id="mainContent">
+    <section class="calendar-content">
+      <div class="calendario" id='calendar'></div>
+    </section>
+    <script src = "../js/calendar.js"></script>
+  </section>
+
+  <footer class="footer">
+    <section class="section-footer">
+      <a href="https://web.whatsapp.com/"><img class="img-wp" src="../images/whatsapp-logo.png" alt="Logo WhatsApp"></a>
+      <p>© 2023 CLINICADMIN</p>
+      <a href="https://instagram.com"><img class="img-ig" src="../images/insta-logo.png" alt="Logo Instagram"></a>
+    </section>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+/* start.css */
+
+.content {
+  flex: 1;
+  margin-left: 200px; 
+  padding: 16px;
+  padding-bottom: 50px; /* Ajusta según la altura de tu footer */
+  overflow-y: auto;
+  transition: margin-left 0.3s ease-in-out; 
+}
+
+.content.expand-content {
+  margin-left: 0; 
+}
+
+.calendario {
+  max-width: 1500px; 
+  margin: auto;
+}
+
+
+.fc-header-toolbar {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  height: 50px;
+  background-color: #1c72c7; 
+  color: #fff; 
+}
+
+.fc-header-title h2 {
+  font-size: 24px; 
+}
+
+.fc-button {
+  background-color: #0056b3; 
+  color: #fff; 
+}
+
+.fc-button:hover {
+  background-color: #004080; 
+}
+
+
+.fc-view {
+  background-color: #bbc3ca; 
+}
+
+.fc-day {
+  border: 1px solid #ddd; 
+}
+
+.fc-event {
+  background-color: #28a745; 
+  color: #fff; 
+}
+
+.fc-event:hover {
+  background-color: #218838; 
+}

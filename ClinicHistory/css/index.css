@@ -1,0 +1,162 @@
+/* index.css */
+
+.header-index {
+  background: linear-gradient(to right, #9AC8CB 10%, #F3FEFF 90%);
+  opacity: 0.6;
+  padding: 5px 15px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.header-container{
+  display: flex; 
+  align-items: center;
+}
+
+.img-titulo{
+  height: 40px; 
+  width: 300px; 
+  margin-left: auto;
+}
+
+.img-logo{
+  height: 30px; 
+  width: 30px; 
+  margin-left: auto;
+}
+
+
+
+.body-index {
+  background-color: #DFFEFF;
+  min-height: 100vh; 
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.body-index::before {
+  content: "";
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5; 
+  z-index: -1;
+  animation: changeBackground 20s linear infinite;
+}
+
+@keyframes changeBackground {
+  0%, 100% {
+    background-image: url('../images/indexbg1.jpeg');
+  }
+  25% {
+    background-image: url('../images/indexbg2.jpg');
+  }
+  50% {
+    background-image: url('../images/indexbg3.jpg');
+  }
+  75% {
+    background-image: url('../images/indexgb4.jpg');
+  }
+}
+
+
+
+
+.section-center {
+background-color: white;
+opacity: 0.9;
+border-radius: 10px;
+padding: 80px;
+margin: 20px auto;
+max-width: 300px;
+height: 430px;
+display: flex; 
+flex-direction: column; 
+align-items: center; 
+
+img {
+  width: 200px; 
+  max-height: 200px; 
+  object-fit: contain; 
+  margin-top: 0px;
+  margin-bottom: auto; 
+}
+}
+
+.p-slogan{
+  font-weight: bold; 
+  text-align: center;
+  font-family: "Arial", sans-serif;
+}
+
+form label,
+form input {
+font-weight: bold;
+margin-bottom: 20px;
+width: 400px; 
+height: 40px; 
+margin-bottom: 10px; 
+box-sizing: border-box; 
+}
+
+.submit-input {
+background-color: #9AC8CB; 
+color: white; 
+padding: 10px 20px; 
+font-size: 16px; 
+border: none; 
+border-radius: 5px; 
+cursor: pointer; 
+}
+
+.submit-input:hover {
+background-color: gray; 
+}
+
+.login-container{
+  background-color: white;
+  font-family: "Arial", sans-serif;
+}
+.footer-index {
+  background: linear-gradient(to right, #F3FEFF 10%, #9AC8CB 90%);
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.section-footer {
+  background: linear-gradient(to right, #F3FEFF 10%, #9AC8CB 90%);
+  opacity: 0.6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  font-family: Arial, sans-serif;
+}
+
+
+.text-footer {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.img-wp{
+  height: 30px; 
+  width: 30px; 
+  margin-right: 10px;
+}
+
+.img-ig{
+  height: 30px; 
+  width: 30px; 
+  margin-left: 10px;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Citas Médicas | CLINICA</title>
+    <script src="https://kit.fontawesome.com/2e20a61ec9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/ControlCitas.css">
+    <link rel="stylesheet" href="../css/estructura.css">
+    <script src="../js/start.js"></script>
+</head>
+
+<body>
+    <header>
+        <section class="header-container">
+            <a href="start.html" class="img-titulo-link">
+                <img class="img-titulo estetoscopio-logo" src="../images/ClinicaRenacer.png" alt="Titulo">
+            </a>
+            <img class="burger-icon" src="../images/burguer-icon.png" alt="MenuBurger">
+        </section>
+        <section class="logo-container">
+            <img class="img-logo" src="../images/clinic-logo.png" alt="Logo">
+            <img class="engranaje-logo" src="../images/engranaje-logo.png" alt="Engranaje" id="engranaje-icon">
+        </section>
+        <section class="dropdown-menu" id="dropdownMenu">
+            <ul>
+                <li>
+                    <a href="../index.html" onclick="cerrarSesion()">
+                        <i class="fas fa-sign-out-alt"></i>Cerrar Sesión
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </header>
+
+    <nav id="navbar">
+        <ul id="menuText">MENU</ul>
+        <ul id="navOptions" class="nav-options">
+            <li data-page="informacion.html" title="Servicios"><i class="fa-solid fa-sheet-plastic"></i><a href="#">Servicios</a></li>
+            <li data-page="HistoriaClinica.html" title="Historia Clínica"><i class="fa-solid fa-hospital-user"></i><a href="#">Historia Clinica</a></li>
+            <li data-page="ControlCitas.html" title="Agendar Cita" class="active" title="Control de Citas"><i class="fa-solid fa-laptop-medical"></i><a href="#">Agendar Citas</a></li>
+            <li data-page="start.html" title="Calendario"><i class="fa-regular fa-calendar-days"></i><a href="#">Calendario</a></li>
+        </ul>
+    </nav>
+
+    <section class="content" id="mainContent">
+        <h1 class="h1-cc">Agendar Cita Médica</h1>
+
+        <div class="form-container">
+            <form id="appointmentForm" class="form-cc">
+                <label for="patient">Paciente:</label>
+                <input type="text" id="patient" name="patient" required>
+
+                <label for="date">Fecha:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Hora:</label>
+                <select id="timeSelect" name="time" required></select>
+
+                <label for="doctor">Médico:</label>
+                <input type="text" id="doctor" name="doctor" required>
+
+                <input type="submit" value="Programar Cita">
+            </form>
+        </div>
+
+        <div class="table-container">
+            <table class="table-cc">
+                <thead>
+                    <tr>
+                        <th class="th-cc">Paciente</th>
+                        <th class="th-cc">Fecha</th>
+                        <th class="th-cc">Hora</th>
+                        <th class="th-cc">Médico</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se mostrarán las citas médicas -->
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <section class="section-footer">
+            <a href="https://web.whatsapp.com/"><img class="img-wp" src="../images/whatsapp-logo.png" alt="Logo WhatsApp"></a>
+            <p>© 2023 CLINICADMIN</p>
+            <a href="https://instagram.com"><img class="img-ig" src="../images/insta-logo.png" alt="Logo Instagram"></a>
+        </section>
+    </footer>
+    <script src="../js/citas.js"></script>
+</body>
+</html>

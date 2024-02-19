@@ -1,0 +1,90 @@
+/* ControlCitas.css */
+
+
+/* Content Section */
+.content {
+    flex: 1;
+    margin-left: 200px;
+    padding: 16px;
+    padding-bottom: 50px;
+    overflow-y: auto;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+.content.expand-content {
+    margin-left: 0;
+}
+
+.h1-cc {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Formulario de Citas Médicas */
+.form-container {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+form label, form input, form select, form submit {
+    display: block;
+    margin-bottom: 15px;
+}
+
+form input[type="text"], form input[type="date"], form select, form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Tabla de Citas Médicas */
+.table-container {
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.table-cc {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.th-cc, .td-cc {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.th-cc {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Efectos */
+img:hover {
+    transform: scale(1.1);
+}
+
+body, h1, h2, h3, h4, h5, h6, p, a, label, input, select, option, th, td {
+    font-family: 'Arial', sans-serif;
+}
+
