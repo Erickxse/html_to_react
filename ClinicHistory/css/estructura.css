@@ -24,7 +24,7 @@ body {
 body.shrink-body {
   padding-left: 50px;
 }
-header {
+.header {
   z-index: 2;
   position: relative;
   background: linear-gradient(to right, #9AC8CB 10%, #F3FEFF 90%);
