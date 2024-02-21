@@ -1,6 +1,6 @@
 import React from "react";
 
-class FooterTemp extends React.Component{
+class Footertemp extends React.Component{
     render(){
         return(
             <footer class="footer">
@@ -15,4 +15,4 @@ class FooterTemp extends React.Component{
 
 }
 
-export default FooterTemp;
+export default Footertemp;

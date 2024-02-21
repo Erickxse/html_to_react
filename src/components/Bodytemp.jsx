@@ -1,6 +1,6 @@
 import React from "react";
 
-class BodyTemp extends React.Component{
+class Bodytemp extends React.Component{
     render(){
         return(
             <body class="body">
@@ -10,4 +10,4 @@ class BodyTemp extends React.Component{
     }
 }
 
-export default BodyTemp;
+export default Bodytemp;

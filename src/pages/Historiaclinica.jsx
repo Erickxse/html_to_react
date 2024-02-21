@@ -1,6 +1,6 @@
 import React from "react";
 
-class HistoriaClinica extends React.Component {
+class Historiaclinica extends React.Component {
     render() {
         return (
             <section className="content" id="mainContent">
@@ -83,4 +83,4 @@ class HistoriaClinica extends React.Component {
     }
 }
 
-export default HistoriaClinica;
+export default Historiaclinica;

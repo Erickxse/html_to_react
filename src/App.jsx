@@ -1,16 +1,16 @@
 // PAGINAS //
 import Home from "./pages/Home";
 import Informacion from "./pages/Informacion";
-import HistoriaClinica from "./pages/HistoriaClinica";
+import Historiaclinica from "./pages/Historiaclinica";
 import Calendario from "./pages/Calendario";
 
 // COMPONENTES //
 import Header from "./components/Header";
-import HeaderTemp from "./components/HeaderTemp";
+import Headertemp from "./components/Headertemp";
 import Nav from "./components/Nav";
-import BodyTemp from "./components/BodyTemp";
+import Bodytemp from "./components/Bodytemp";
 import Footer from "./components/Footer";
-import FooterTemp from "./components/FooterTemp";
+import Footertemp from "./components/Footertemp";
 
 
 // ESTILOS //
@@ -31,11 +31,11 @@ function Layout(){
 
   return(
     <div>
-      <HeaderTemp />
+      <Headertemp />
       <Nav isActive={activePage}/>
-      <BodyTemp />
+      <Bodytemp />
       <Outlet />
-      <FooterTemp />
+      <Footertemp />
     </div>
   );
 }
@@ -46,7 +46,7 @@ function App() {
         <Route exact path="/" element={<Home />}/>
         <Route path="/" element={<Layout />}>
           <Route path="Informacion" element={<Informacion />} />
-          <Route path="HistoriaClinica" element={<HistoriaClinica />} />
+          <Route path="HistoriaClinica" element={<Historiaclinica />} />
           <Route path="Calendario" element={<Calendario/>} />
         </Route>
       </Routes>
