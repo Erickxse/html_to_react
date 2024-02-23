@@ -9,6 +9,12 @@ class Informacion extends React.Component{
         return(
 
             <section class="content-informacion" id="mainContent">    
+                    <link
+                        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+                        rel="stylesheet"
+                        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+                        crossOrigin="anonymous"
+                    />
                 <section class="cont-cont">
                     <div class="wrapper pb-0">
                         <div class="container">

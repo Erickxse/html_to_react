@@ -32,7 +32,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
-/* Chequeo*/
+/* Formulario de Citas Médicas */
 .cc-label,
 .cc-input,
 .cc-select,
@@ -40,6 +40,7 @@
   display: block;
   margin-bottom: 15px;
 }
+
 form input[type="text"], form input[type="date"], form select, form input[type="submit"] {
     width: 100%;
     padding: 10px;
@@ -63,7 +64,7 @@ form input[type="submit"]:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
 }
-/* NO*/
+
 .table-cc {
     width: 100%;
     border-collapse: collapse;

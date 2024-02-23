@@ -3,7 +3,7 @@ import React from "react";
 class Home extends React.Component {
     render() {
         return (
-            <body class="body-index">
+            <section class="body-index">
                 <header class="header-index">
                     <section class="header-container">
                         <img class="img-titulo" src="images/ClinicaRenacer.png" alt="Titulo" />
@@ -33,7 +33,7 @@ class Home extends React.Component {
                 </footer>
 
                 <script src="index.js"></script>
-            </body>
+            </section>
         );
     }
 }

@@ -10,7 +10,7 @@ class Controlcitas extends React.Component {
         <h1 className="h1-cc">Agendar Cita Médica</h1>
 
         <div className="form-container">
-          <form id="appointmentForm" className="form-cc">
+        <form id="appointmentForm" className="form-cc">
             <label htmlFor="patient" className="cc-label">Paciente:</label>
             <input type="text" id="patient" name="patient" className="cc-input" required />
 
