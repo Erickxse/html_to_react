@@ -31,7 +31,7 @@ class Nav extends React.Component {
             <a href="#">Agendar Citas</a>
           </li>
           <li
-            data-page="start.html"
+            data-page="Calendario.jsx"
             title="Calendario"
             className={this.props.isActive === "Calendario" ? "active" : ""}
           >

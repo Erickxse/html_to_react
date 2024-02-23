@@ -7,6 +7,7 @@ import Controlcitas from "./pages/Controlcitas";
 
 // COMPONENTES //
 import Header from "./components/Header";
+import Navbar from "./components/Navbar";
 import Headertemp from "./components/Headertemp";
 import Nav from "./components/Nav";
 import Bodytemp from "./components/Bodytemp";
@@ -33,6 +34,7 @@ function Layout(){
   return(
     <div>
       <Headertemp />
+      <Navbar />
       <Nav isActive={activePage}/>
       <Bodytemp />
       <Outlet />
@@ -42,17 +44,20 @@ function Layout(){
 }
 function App() {
   return(
-    <Router>
-      <Routes>
-        <Route exact path="/" element={<Home />}/>
-        <Route path="/" element={<Layout />}>
-          <Route path="Informacion" element={<Informacion />} />
-          <Route path="HistoriaClinica" element={<Historiaclinica />} />
-          <Route path="Calendario" element={<Calendario/>} />
-          <Route path="ControlCitas" element={<Controlcitas/>} />
-        </Route>
-      </Routes>
-    </Router>
+    <div className="">
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Home />}/>
+          <Route path="/" element={<Layout />}>
+            <Route path="Informacion" element={<Informacion />} />
+            <Route path="HistoriaClinica" element={<Historiaclinica />} />
+            <Route path="Calendario" element={<Calendario/>} />
+            <Route path="ControlCitas" element={<Controlcitas/>} />
+          </Route>
+
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
