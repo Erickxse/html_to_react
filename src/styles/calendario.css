@@ -1,6 +1,6 @@
 /* start.css */
 
-.content {
+.content-calendario {
     flex: 1;
     margin-left: 200px; 
     padding: 16px;
@@ -9,7 +9,7 @@
     transition: margin-left 0.3s ease-in-out; 
   }
   
-  .content.expand-content {
+  .content-calendario.expand-content {
     margin-left: 0; 
   }
   

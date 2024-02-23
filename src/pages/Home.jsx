@@ -10,7 +10,7 @@ class Home extends React.Component {
                     </section>
                     <img class="img-logo" src="images/clinic-logo.png" alt="Logo" />
                 </header>
-                <section class="section-center">
+                <section class="section-center-index">
                     <img src="images/clinic-logo.png" alt="Logo" />
                     <p class="p-slogan">"Cuidando tu Salud, Administrando tu Bienestar"</p>
                     <section class="login-container">

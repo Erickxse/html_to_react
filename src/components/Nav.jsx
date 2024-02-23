@@ -7,7 +7,7 @@ class Nav extends React.Component {
         <ul id="menuText">MENU</ul>
         <ul id="navOptions" className="nav-options">
           <li
-            data-page="Informacion.js"
+            data-page="Informacion.jsx"
             title="Informacion"
             className={this.props.isActive === "Informacion" ? "active" : ""}
           >
@@ -15,17 +15,17 @@ class Nav extends React.Component {
             <a href="#">Servicios</a>
           </li>
           <li
-            data-page="HistoriaClinica.html"
+            data-page="Historiaclinica.jsx"
             title="Historia Clínica"
-            className={this.props.isActive === "HistoriaClinica" ? "active" : ""}
+            className={this.props.isActive === "Historiaclinica" ? "active" : ""}
           >
             <i className="fa-solid fa-hospital-user"></i>
             <a href="#">Historia Clinica</a>
           </li>
           <li
-            data-page="ControlCitas.html"
+            data-page="Controlcitas.jsx"
             title="Control de Citas"
-            className={this.props.isActive === "ControlCitas" ? "active" : ""}
+            className={this.props.isActive === "Controlcitas" ? "active" : ""}
           >
             <i className="fa-solid fa-laptop-medical"></i>
             <a href="#">Agendar Citas</a>
@@ -33,7 +33,7 @@ class Nav extends React.Component {
           <li
             data-page="start.html"
             title="Calendario"
-            className={this.props.isActive === "start" ? "active" : ""}
+            className={this.props.isActive === "Calendario" ? "active" : ""}
           >
             <i className="fa-regular fa-calendar-days"></i>
             <a href="#">Calendario</a>

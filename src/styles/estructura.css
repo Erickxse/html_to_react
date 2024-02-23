@@ -1,4 +1,6 @@
 
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
 .body::before {
     content: "";
     position: fixed;
@@ -233,6 +235,7 @@
     padding: 10px;
     text-align: center;
     width: 100%;
+    position: relative;
   }
   
   .section-footer {
