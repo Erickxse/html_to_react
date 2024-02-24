@@ -3,9 +3,9 @@ import React from "react";
 class Bodytemp extends React.Component{
     render(){
         return(
-            <body class="body">
+            <div class="body">
 
-            </body>
+            </div>
         )
     }
 }

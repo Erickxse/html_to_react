@@ -7,7 +7,6 @@ import Controlcitas from "./pages/Controlcitas";
 
 // COMPONENTES //
 import Header from "./components/Header";
-import Navbar from "./components/Navbar";
 import Headertemp from "./components/Headertemp";
 import Nav from "./components/Nav";
 import Bodytemp from "./components/Bodytemp";
@@ -25,17 +24,23 @@ import './styles/calendario.css';
 import './styles/controlcitas.css';
 
 import {BrowserRouter as Router, Route, Routes, Outlet, useLocation} from "react-router-dom";
+import { useState } from "react";
 
 
 function Layout(){
   const location = useLocation();
-  const activePage = location.pathname.split("/")[1];
+
+
+  const [activePage, setActivePage] = useState("");
+  const handlePageChange = (page) => {
+    setActivePage(page);
+  };
+
 
   return(
     <div>
       <Headertemp />
-      <Navbar />
-      <Nav isActive={activePage}/>
+      <Nav isActive={activePage} onPageChange={handlePageChange}/>
       <Bodytemp />
       <Outlet />
       <Footertemp />
