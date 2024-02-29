@@ -1,4 +1,5 @@
 import React from "react";
+import LoginForm from "../components/LoginForm";
 
 class Home extends React.Component {
     render() {
@@ -14,14 +15,7 @@ class Home extends React.Component {
                     <img src="images/clinic-logo.png" alt="Logo" />
                     <p class="p-slogan">"Cuidando tu Salud, Administrando tu Bienestar"</p>
                     <section class="login-container">
-                        <form id="loginForm">
-                            <label for="nombre">Nombre</label><br />
-                            <input type="text" id="nombre" name="nombre" placeholder="Usuario" required /><br />
-                            <label for="clave">Clave</label><br />
-                            <input type="password" id="clave" name="clave" placeholder="Clave" required /><br />
-                            <br />
-                            <button class="submit-input" type="button">Acceder</button>
-                        </form>
+                        <LoginForm />
                     </section>
                 </section>
                 <footer class="footer-index">
@@ -31,8 +25,6 @@ class Home extends React.Component {
                         <a href="https://instagram.com"><img class="img-ig" src="images/insta-logo.png" alt="Logo Instagram" /></a>
                     </section>
                 </footer>
-
-                <script src="index.js"></script>
             </section>
         );
     }

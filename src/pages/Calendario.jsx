@@ -1,12 +1,14 @@
 import React from "react";
+import Agenda from "../components/Agenda";
 
 function Calendario(){
     return(
-        <section class="content-calendar" id="mainContent">
+        <section class="content-informacion" id="mainContent">
                 <section class="calendar-content">
-                <div class="calendario" id='calendar'></div>
+                <div class="calendario" id='calendar'>
+                    <Agenda />
+                </div>
                 </section>
-                <script src = "../js/calendar.js"></script>
             </section>
     );
 }

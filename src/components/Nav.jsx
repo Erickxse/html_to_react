@@ -19,7 +19,7 @@ class Nav extends React.Component {
           >
             <i className="fa-solid fa-sheet-plastic"></i>
             <Link to="/Informacion" onClick={() => this.handleClick("Informacion")}>
-              Servicios
+              Informacion
             </Link>
           </li>
           <li
