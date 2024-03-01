@@ -11,7 +11,14 @@ function Agenda() {
     <div>
       <FullCalendar 
       plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
-      initialView={''}
+      initialView={'timeGridWeek'}
+      headerToolbar={
+        {
+          start: 'today prev,next', // will normally be on the left. if RTL, will be on the right
+          center: 'dayGridMonth,timeGridWeek,timeGridDay',
+          end: 'title' // will normally be on the right. if RTL, will be on the left
+        }
+      }
       />
 
       Calendar</div>
