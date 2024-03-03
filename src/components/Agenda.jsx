@@ -3,6 +3,9 @@ import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import interactionPlugin from "@fullcalendar/interaction";
+import esLocale from '@fullcalendar/core/locales/es';
+
+
 
 
 function Agenda() {
@@ -19,6 +22,7 @@ function Agenda() {
           end: 'title' // will normally be on the right. if RTL, will be on the left
         }
       }
+      locale={esLocale}
       />
 
       Calendar</div>

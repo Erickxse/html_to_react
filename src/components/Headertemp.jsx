@@ -1,30 +1,58 @@
 import React from "react";
+import Dropdownmenu from "./Dropdownmenu";
 
-class Headertemp extends React.Component{
-    render(){
-        return(
-            <header class="header">
-                <section class="header-container">
-                    <a href="start.html" class="img-titulo-link">
-                        <img class="img-titulo estetoscopio-logo" src="../images/ClinicaRenacer.png" alt="Titulo" />
+class Headertemp extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            showDropdown: false,
+            isDropdownOpen: false
+        };
+    }
+
+    handleMouseOver = () => {
+        document.querySelector('.img-logo').src = '../images/engranaje-logo.png';
+    }
+
+    handleMouseOut = () => {
+        document.querySelector('.img-logo').src = '../images/clinic-logo.png';
+    }
+
+    handleDropdownToggle = () => {
+        this.setState(prevState => ({
+            isDropdownOpen: !prevState.isDropdownOpen
+        }));
+    }
+
+    render() {
+        return (
+            <header className="header">
+                <section className="header-container">
+                    <a href="start.html" className="img-titulo-link">
+                        <img className="img-titulo estetoscopio-logo" src="../images/ClinicaRenacer.png" alt="Titulo" />
                     </a>
-                    <img class="burger-icon" src="../images/burguer-icon.png" alt="MenuBurger" />
+                    <img className="burger-icon" src="../images/burguer-icon.png" alt="MenuBurger" />
                 </section>
-                <section class="logo-container">
-                    <img class="img-logo" src="../images/clinic-logo.png" alt="Logo" />
-                    <img class="engranaje-logo" src="../images/engranaje-logo.png" alt="Engranaje" id="engranaje-icon" />
-                    </section>
-                <section class="dropdown-menu" id="dropdownMenu">
-                    <ul>
-                        <li>
-                        <a href="../index.html" onclick="cerrarSesion()">
-                            <i class="fas fa-sign-out-alt"></i>Cerrar Sesión
-                        </a>
-                    </li>
-                    </ul>
+                <section className="logo-container">
+                    <img
+                        className="img-logo"
+                        src="../images/clinic-logo.png"
+                        alt="Logo"
+                        onMouseOver={this.handleMouseOver}
+                        onMouseOut={this.handleMouseOut}
+                        onClick={this.handleDropdownToggle}
+                    />
+                    {this.state.isDropdownOpen && <Dropdownmenu />}
+                    <img
+                        className="engranaje-logo"
+                        src="../images/engranaje-logo.png"
+                        alt="Engranaje"
+                        id="engranaje-icon"
+                        onClick={this.handleDropdownToggle}
+                    />
                 </section>
             </header>
-        )
+        );
     }
 }
 

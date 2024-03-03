@@ -110,14 +110,13 @@
   }
   
   .dropdown-menu {
-    display: none;
     position: absolute;
     top: 50px; 
     right: 10px; 
     background-color: #f3ffff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 10px;
-    z-index: 2;
+    z-index: 1000;
   }
   
   .dropdown-menu ul {

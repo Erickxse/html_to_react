@@ -43,7 +43,7 @@ function Layout(){
       <Nav isActive={activePage} onPageChange={handlePageChange}/>
       <Bodytemp />
       <Outlet />
-      {/* <Footertemp /> */}
+      <Footertemp />
     </div>
   );
 }
